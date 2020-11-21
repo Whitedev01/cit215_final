@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Final </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="flashcards-app">
+
+  <img class = "cart" v-bind:src="cartImage"></img>
+
+<div class="header">Value Instrument Inc.</div>
+  <br>
+  <div class="card" v-for="card in cards">
+    <div class="">
+      <img height="100" width="100" v-bind:src="card.image"></img>
+      <h3>{{card.name}}</h3>
+    <br><button>Add to cart</button>
+</div>
+</div>
+
+
+  <div class="new">
+    <h3>Add Instrument</h3>
+    <input type="text" v-model="instrumentName" placeholder="Name of Instrument">
+    <input type="text"  v-model="instrumentType" placeholder="What Type of Instrument">
+    <br><h3> Brand</h3>
+    <input type="radio" id="one" value="Fender" v-model="brandInput">
+    <label for="one">Fender</label>
+    <input type="radio" id="two" value="Yamaha" v-model="brandInput">
+    <label for="two">Yamaha</label>
+    <input type="radio" id="three" value="Maton" v-model="brandInput">
+    <label for="three">Maton</label>
+    <br>
+    <br>
+    <button v-on:click="addCard" >Add Item</button>
+</div>
+  </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.8/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
