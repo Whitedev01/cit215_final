@@ -1,0 +1,68 @@
+#flashcards-app{
+  display:lex;
+  flex-wrap:wrap;
+}
+  .card{
+  height:250px;
+  width:250px;
+  position:relative;
+  font-family: Roboto, sans-serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:4px;
+  box-shadow:rgba(0,0,0,0.5) 2px 2px 8px;
+  overflow:hidden;
+  margin-left:20px;
+  cursor:pointer;
+  padding: 5px;  
+}
+
+{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100%;
+}
+
+.popUp{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  height:100%;
+  width:100%;
+}
+
+.hide{
+  display:none;
+}
+.Fender:hover{
+  background-color:red;
+  color:white;
+}
+.Maton:hover{
+  background-color:blue;
+  color:white;
+}
+.Yamaha:hover{
+  background-color:green;
+  color:white;
+}
+
+img.{
+  height:50px;
+  width:200px
+}
+.cart{
+  float:right;
+  height:50px;
+  widht:50px;
+  padding:30px;
+}
+
+.header{
+  font-weight:bold;
+  font-size:35px;
+  text-align: center;
+  padding: 50px;
